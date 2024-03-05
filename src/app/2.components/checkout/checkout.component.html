@@ -1,0 +1,106 @@
+<div
+  class="rounded-xl border bg-card text-card-foreground shadow max-w-[420px] p-5 flex flex-col gap-4"
+  data-np-autofill-form-type="credit_card"
+  data-np-checked="1"
+  data-np-watching="1"
+>
+  <div>
+    <h3 class="text-base font-semibold tracking-tight">Méthode de paiement</h3>
+    <p class="text-sm tracking-tight text-neutral-500">
+      Ajouter une nouvelle méthode de paiement
+    </p>
+  </div>
+
+  <form>
+    <div class="flex flex-col gap-2">
+      <label for="lastname" class="text-sm font-medium">Nom</label>
+      <input
+        required
+        type="text"
+        name="lastname"
+        id=""
+        class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+      />
+    </div>
+    <div class="flex flex-col gap-2">
+      <label for="firstname" class="text-sm font-medium">Prénom</label>
+      <input
+        required
+        type="text"
+        name="firstname"
+        id=""
+        class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+      />
+    </div>
+    <div class="flex flex-col gap-2">
+      <label for="codepost" class="text-sm font-medium">Code postal</label>
+      <input
+        required
+        type="text"
+        name="codepost"
+        id=""
+        class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+      />
+    </div>
+    <div class="flex flex-col gap-2">
+      <label for="city" class="text-sm font-medium">Ville</label>
+      <input
+        required
+        type="text"
+        name="city"
+        id=""
+        class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+      />
+    </div>
+    <div class="mt-4 mb-4 border border-solid border-neutral-200"></div>
+    <div class="flex flex-col gap-2">
+      <label for="cardnumber" class="text-sm font-medium">Numéro de carte</label>
+      <input
+        required
+        type="text"
+        name="cardnumber"
+        id=""
+        class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+      />
+    </div>
+    <div class="grid grid-cols-3 gap-4">
+        <div class="flex flex-col gap-2">
+            <label for="expmonth" class="text-sm font-medium">Mois</label>
+            <input
+                required
+              type="number"
+              min="1"
+              max="12"
+              name="expmonth"
+              id=""
+              class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+            />
+        </div>
+        <div class="flex flex-col gap-2">
+            <label for="expyear" class="text-sm font-medium">Année</label>
+            <input
+                required
+              type="number"
+              min="2024"
+              max="2030"
+              name="expyear"
+              id=""
+              class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+            />
+        </div>
+        <div class="flex flex-col gap-2">
+            <label for="cardcvc" class="text-sm font-medium">CVC</label>
+            <input
+                required
+              type="number"
+              min="000"
+              max="999"
+              name="cardcvc"
+              id=""
+              class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+            />
+        </div>
+    </div>
+    <input type="submit" class="bg-[#facc15] rounded py-2 shadow mt-4 w-full tracking-tight cursor-pointer" value="Paiement">
+  </form>
+</div>

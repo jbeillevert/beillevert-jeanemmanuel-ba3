@@ -1,0 +1,24 @@
+<h1 class="text-3xl font-bold tracking-tight">Produits</h1>
+<ul class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-4 ">
+    @for (article of data; track article.id) {
+        <li class="bg-white rounded-md shadow-sm flex flex-col items-center justify-center border border-solid border-neutral-200">
+            <img [src]="article['Closet Image']" class="max-w-32" alt="article-picture">
+            <div class="p-4 flex flex-col w-full justify-start">
+                <div class="bg-[#fef5d0] w-fit rounded-full px-2 py-1">
+                    <p class="text-xs tracking-tighter text-neutral-400"> {{ article['Seasonal Availability'] }}</p>
+                </div>
+                <div class="flex justify-between mb-4">
+                    <h3 class="font-medium tracking-tight"> {{ article.Name }}</h3>
+                    <p class="text-sm text-neutral-400 tracking-tight"> {{ article.Sell }} €</p>
+                </div>
+                <button class="bg-[#facc15] rounded py-2 shadow mb-4">Ajouter au panier</button>
+                
+                
+                <div class="flex py-2 justify-between items-center gap-4">
+                    <label for="quantity" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 tracking-tight">Quantité</label>
+                    <input class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 text-center" type="number" name="quantity" step="1" id="" min="1">
+                </div>
+            </div>
+        </li>
+    }
+</ul>
